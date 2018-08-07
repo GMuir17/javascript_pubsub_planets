@@ -17,7 +17,7 @@ PlanetInfoView.prototype.render = function(planet) {
   this.container.appendChild(planetList);
   for (property in planet) {
     const planetListItem = document.createElement('li');
-    planetListItem.textContent = `${property}: ${planet[property]}`
+    planetListItem.textContent = `${property.toUpperCase()}: ${planet[property]}`
     planetList.appendChild(planetListItem);
   }
 
