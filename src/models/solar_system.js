@@ -8,8 +8,10 @@ SolarSystem.prototype.bindEvents = function () {
   PubSub.subscribe('SelectView:planet', (evt) => {
     const planetName = evt.detail;
     const foundPlanet = this.findPlanetByName(planetName);
-    console.log(foundPlanet);
+    PubSub.publish('SolarSystem:selectedPlanet', foundPlanet);
   });
+
+
 };
 
 SolarSystem.prototype.findPlanetByName = function (name) {
@@ -18,6 +20,8 @@ SolarSystem.prototype.findPlanetByName = function (name) {
      return planet;
    }
  };
+
+
 
 };
 module.exports = SolarSystem;

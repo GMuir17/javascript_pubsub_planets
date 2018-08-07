@@ -12,7 +12,7 @@ const planets = [
   {
     name: 'Venus',
     orbit: 224.701,
-    day: -234.025,
+    day: 234.025,
     surfaceArea: 0.902,
     volume: 0.866,
     gravity: 0.904,
