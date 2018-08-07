@@ -62,7 +62,7 @@ const planets = [
   {
     name: 'Uranus',
     orbit: 30688.5,
-    day: -0.718,
+    day: 0.718,
     surfaceArea: 15.91,
     volume: 63.086,
     gravity: 0.886,
